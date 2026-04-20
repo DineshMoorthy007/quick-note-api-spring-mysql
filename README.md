@@ -11,6 +11,12 @@ This repository represents Stack 1 of the Quick-Note Polyglot initiative. It pro
 
 The backend is responsible for authentication workflows, note lifecycle management, persistence orchestration, and API-level validation/error handling. The implementation emphasizes maintainability, traceability, and runtime portability for local development and containerized deployment.
 
+## The Polyglot Ecosystem
+
+This backend is one component of a larger decoupled system, where each repository owns a distinct boundary and contract within the overall product.
+
+- [Frontend User Interface](https://github.com/DineshMoorthy007/quick-note-react-ui)
+
 ## System Architecture and Tech Stack
 
 - Language and Runtime: Java 17/21
