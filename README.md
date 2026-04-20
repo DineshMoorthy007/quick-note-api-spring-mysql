@@ -80,6 +80,25 @@ mvnw.cmd spring-boot:run
 
 The API starts on port 8080 by default unless overridden via application configuration.
 
+### 3. Inspect local MySQL tables and contents
+
+If you want to verify the database schema or inspect stored records from Windows Command Prompt, connect to the local MySQL container with the following command:
+
+```bat
+mysql -h 127.0.0.1 -P 3307 -u root -p
+```
+
+After entering the password, use the application database and query its tables:
+
+```sql
+USE quicknote_db;
+SHOW TABLES;
+SELECT * FROM users;
+SELECT * FROM notes;
+```
+
+This is the recommended approach for confirming that the users and notes tables were created correctly, and for validating the data persisted by the backend during local development.
+
 ## Testing and Code Coverage
 
 Execute the test suite:
